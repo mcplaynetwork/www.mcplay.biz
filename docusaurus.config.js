@@ -89,29 +89,25 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.io/mcplaynetwork',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                href: 'https://twitter.com/mcplaynetwork',
+              }
             ],
           },
           {
-            title: 'More',
+            title: 'Other',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Main site',
+                to: 'https://www.mcplay.biz',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/mcplaynetwork',
               },
             ],
           },
