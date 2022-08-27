@@ -10,7 +10,7 @@ const config = {
   tagline: 'Minecraft Java Edition multiplayer server documentation website for MCPlayNetwork players',
   url: 'https://mc-docs.pages.dev',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'log', //'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
@@ -53,12 +53,6 @@ const config = {
     ({
       navbar: {
         title: 'MCPlayNetwork',
-        /*
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
-        */
         items: [
           {
             type: 'doc',
@@ -92,8 +86,16 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Home',
+                to: '/',
+              },
+              {
+                label: 'Vailla',
+                to: '/vanilla/',
+              },
+              {
+                label: 'Slimefun',
+                to: '/slimefun/',
               },
             ],
           },
