@@ -67,6 +67,18 @@ const config = {
             label: 'Home',
           },
           {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'vanilla',
+            label: 'Vanilla',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'slimefun',
+            label: 'Slimefun',
+          },
+          {
             href: 'https://github.com/mcplaynetwork/docs',
             label: 'GitHub',
             position: 'right',
