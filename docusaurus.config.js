@@ -28,7 +28,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com//mcplaynetwork/docs/edit/master/',
+            'https://github.com/mcplaynetwork/docs/edit/master/',
         },
         blog: false,
         theme: {
