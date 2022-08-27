@@ -14,9 +14,7 @@ sidebar_label: 土地の保護
 
 チュートリアル動画があります。こちらもご確認ください。
 
-<figure class="video-container">
-  <iframe src="//www.youtube.com/watch?v=VDsjXB-BaE0" frameborder="0" allowfullscreen width="100%"></iframe>
-</figure>
+[How to Claim Land with the Grief Prevention Minecraft Server Plugin - YouTube](https://www.youtube.com/watch?v=VDsjXB-BaE0)
 
 ## クレームの作成
 
