@@ -48,19 +48,19 @@ const config = {
             type: 'doc',
             docId: 'README',
             position: 'left',
-            label: 'Home',
+            label: 'ホーム',
           },
           {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'vanilla',
-            label: 'Vanilla',
+            label: 'バニラサーバー',
           },
           {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'slimefun',
-            label: 'Slimefun',
+            label: '工業サーバー',
           },
           {
             href: 'https://github.com/mcplaynetwork/docs',
