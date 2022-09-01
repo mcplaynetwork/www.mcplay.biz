@@ -3,4 +3,10 @@ sidebar_position: 1
 sidebar_label: トップページ
 ---
 
-# Slimefun
+:::caution
+
+WIP
+
+:::
+
+# 工業サーバーについて
