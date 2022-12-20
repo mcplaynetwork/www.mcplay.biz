@@ -56,12 +56,12 @@ const config = {
             sidebarId: 'vanilla',
             label: 'バニラサーバー',
           },
-          {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'slimefun',
-            label: '工業サーバー',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   position: 'left',
+          //   sidebarId: 'slimefun',
+          //   label: '工業サーバー',
+          // },
           {
             href: 'https://github.com/mcplaynetwork/docs',
             label: 'GitHub',
