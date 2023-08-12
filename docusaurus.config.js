@@ -46,7 +46,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'README',
+            docId: 'index',
             position: 'left',
             label: 'ホーム',
           },
