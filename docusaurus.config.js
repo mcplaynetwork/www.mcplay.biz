@@ -4,15 +4,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'MCPlayNetwork Docs',
-  tagline: 'Minecraft Java Edition multiplayer server documentation website for MCPlayNetwork players',
-  url: 'https://mc-docs.pages.dev',
+  title: 'MCPlayNetwork',
+  tagline: 'ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバ',
+  url: 'https://www.mcplay.biz',
   baseUrl: '/',
   onBrokenLinks: 'log', //'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'mcplaynetwork',
-  projectName: 'docs',
+  projectName: 'www.mcplay.biz',
 
   i18n: {
     defaultLocale: 'ja',
@@ -28,9 +28,16 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/mcplaynetwork/docs/edit/master/',
+            'https://github.com/mcplaynetwork/www.mcplay.biz/edit/master/',
         },
-        blog: false,
+        blog: {
+          path: 'news',
+          routeBasePath: 'news',
+          showReadingTime: false,
+          blogSidebarCount: 5,
+          postsPerPage: 1,
+          blogSidebarTitle: "最新記事",
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -43,28 +50,41 @@ const config = {
     ({
       navbar: {
         title: 'MCPlayNetwork',
+        logo: {
+          alt: 'MCPlayNetwork',
+          src: 'img/logo.svg',
+        },
         items: [
           {
-            type: 'doc',
-            docId: 'README',
+            to: '/',
             position: 'left',
             label: 'ホーム',
+          },
+          {
+            to: 'news',
+            position: 'left',
+            label: 'ニュース',
+          },
+          {
+            to: 'rules',
+            position: 'left',
+            label: 'ルール',
           },
           {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'vanilla',
-            label: 'バニラサーバー',
+            label: 'バニラサーバ',
           },
           // {
           //   type: 'docSidebar',
           //   position: 'left',
           //   sidebarId: 'slimefun',
-          //   label: '工業サーバー',
+          //   label: '工業サーバ',
           // },
           {
-            href: 'https://github.com/mcplaynetwork/docs',
-            label: 'GitHub',
+            to: 'discord',
+            label: 'Discordサーバ',
             position: 'right',
           },
         ],
@@ -73,45 +93,49 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'サイトマップ',
             items: [
               {
-                label: 'Home',
+                label: 'ホーム',
                 to: '/',
               },
               {
-                label: 'Vailla',
-                to: '/vanilla/',
+                label: 'ルール',
+                to: 'rules',
               },
               {
-                label: 'Slimefun',
-                to: '/slimefun/',
+                label: 'バニラサーバ',
+                to: 'vanilla',
               },
+              // {
+              //   label: 'Slimefun',
+              //   to: 'slimefun',
+              // },
             ],
           },
           {
-            title: 'Community',
+            title: 'コミュニティ',
             items: [
               {
-                label: 'Discord',
-                href: 'https://discord.io/mcplaynetwork',
+                label: 'Discordサーバ',
+                to: 'discord',
               },
               {
-                label: 'Twitter',
+                label: 'X (Twitter)',
                 href: 'https://twitter.com/mcplaynetwork',
               }
             ],
           },
           {
-            title: 'Other',
+            title: 'その他',
             items: [
-              {
-                label: 'Main site',
-                to: 'https://www.mcplay.biz',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/mcplaynetwork',
+              },
+              {
+                to: 'contact',
+                label: 'お問い合わせ',
               },
             ],
           },

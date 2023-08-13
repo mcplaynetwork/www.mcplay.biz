@@ -28,3 +28,23 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.news-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-item {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.news-link {
+  text-decoration: none;
+}
+
+.news-date {
+  margin-left: 1em;
+  font-size: 0.8em;
+  color: gray;
+}
