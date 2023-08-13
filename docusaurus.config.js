@@ -50,6 +50,10 @@ const config = {
     ({
       navbar: {
         title: 'MCPlayNetwork',
+        logo: {
+          alt: 'MCPlayNetwork',
+          src: 'img/logo.svg',
+        },
         items: [
           {
             type: 'doc',
