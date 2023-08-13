@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'MCPlayNetwork',
   tagline: 'ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバ',
-  url: 'https://mc-docs.pages.dev',
+  url: 'https://www.mcplay.biz',
   baseUrl: '/',
   onBrokenLinks: 'log', //'throw',
   onBrokenMarkdownLinks: 'warn',
