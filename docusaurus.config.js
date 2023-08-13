@@ -133,6 +133,10 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/mcplaynetwork',
               },
+              {
+                to: 'contact',
+                label: 'お問い合わせ',
+              },
             ],
           },
         ],
