@@ -84,6 +84,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            to: 'discord',
+            label: 'Discordサーバー',
+            position: 'right',
+          },
         ],
       },
       footer: {
@@ -111,7 +116,7 @@ const config = {
             items: [
               {
                 label: 'Discord',
-                href: 'https://discord.io/mcplaynetwork',
+                to: 'discord',
               },
               {
                 label: 'Twitter',
@@ -122,10 +127,6 @@ const config = {
           {
             title: 'Other',
             items: [
-              {
-                label: 'Main site',
-                to: 'https://www.mcplay.biz',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/mcplaynetwork',
