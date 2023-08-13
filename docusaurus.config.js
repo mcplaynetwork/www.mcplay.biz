@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MCPlayNetwork',
-  tagline: 'Minecraft Java Edition multiplayer server documentation website for MCPlayNetwork players',
+  tagline: 'ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバー',
   url: 'https://mc-docs.pages.dev',
   baseUrl: '/',
   onBrokenLinks: 'log', //'throw',
