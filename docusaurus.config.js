@@ -80,11 +80,6 @@ const config = {
           //   label: '工業サーバー',
           // },
           {
-            href: 'https://github.com/mcplaynetwork/docs',
-            label: 'GitHub',
-            position: 'right',
-          },
-          {
             to: 'discord',
             label: 'Discordサーバー',
             position: 'right',
@@ -95,37 +90,41 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'サイトマップ',
             items: [
               {
-                label: 'Home',
+                label: 'ホーム',
                 to: '/',
               },
               {
-                label: 'Vailla',
-                to: '/vanilla/',
+                label: 'ルール',
+                to: 'rules',
               },
               {
-                label: 'Slimefun',
-                to: '/slimefun/',
+                label: 'バニラサーバー',
+                to: 'vanilla',
               },
+              // {
+              //   label: 'Slimefun',
+              //   to: 'slimefun',
+              // },
             ],
           },
           {
-            title: 'Community',
+            title: 'コミュニティ',
             items: [
               {
-                label: 'Discord',
+                label: 'Discordサーバー',
                 to: 'discord',
               },
               {
-                label: 'Twitter',
+                label: 'X (Twitter)',
                 href: 'https://twitter.com/mcplaynetwork',
               }
             ],
           },
           {
-            title: 'Other',
+            title: 'その他',
             items: [
               {
                 label: 'GitHub',
