@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MCPlayNetwork',
-  tagline: 'ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバー',
+  tagline: 'ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバ',
   url: 'https://mc-docs.pages.dev',
   baseUrl: '/',
   onBrokenLinks: 'log', //'throw',
@@ -74,17 +74,17 @@ const config = {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'vanilla',
-            label: 'バニラサーバー',
+            label: 'バニラサーバ',
           },
           // {
           //   type: 'docSidebar',
           //   position: 'left',
           //   sidebarId: 'slimefun',
-          //   label: '工業サーバー',
+          //   label: '工業サーバ',
           // },
           {
             to: 'discord',
-            label: 'Discordサーバー',
+            label: 'Discordサーバ',
             position: 'right',
           },
         ],
@@ -104,7 +104,7 @@ const config = {
                 to: 'rules',
               },
               {
-                label: 'バニラサーバー',
+                label: 'バニラサーバ',
                 to: 'vanilla',
               },
               // {
@@ -117,7 +117,7 @@ const config = {
             title: 'コミュニティ',
             items: [
               {
-                label: 'Discordサーバー',
+                label: 'Discordサーバ',
                 to: 'discord',
               },
               {
