@@ -51,6 +51,11 @@ const config = {
             label: 'ホーム',
           },
           {
+            to: 'rules',
+            position: 'left',
+            label: 'ルール',
+          },
+          {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'vanilla',
