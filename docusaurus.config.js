@@ -56,8 +56,7 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
-            docId: 'index',
+            to: '/',
             position: 'left',
             label: 'ホーム',
           },
