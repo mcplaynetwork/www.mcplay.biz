@@ -30,7 +30,14 @@ const config = {
           editUrl:
             'https://github.com/mcplaynetwork/docs/edit/master/',
         },
-        blog: false,
+        blog: {
+          path: 'news',
+          routeBasePath: 'news',
+          showReadingTime: false,
+          blogSidebarCount: 5,
+          postsPerPage: 1,
+          blogSidebarTitle: "最新記事",
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -49,6 +56,11 @@ const config = {
             docId: 'index',
             position: 'left',
             label: 'ホーム',
+          },
+          {
+            to: 'news',
+            position: 'left',
+            label: 'ニュース',
           },
           {
             to: 'rules',
