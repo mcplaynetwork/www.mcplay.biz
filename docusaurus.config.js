@@ -12,7 +12,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'mcplaynetwork',
-  projectName: 'docs',
+  projectName: 'www.mcplay.biz',
 
   i18n: {
     defaultLocale: 'ja',
@@ -28,7 +28,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/mcplaynetwork/docs/edit/master/',
+            'https://github.com/mcplaynetwork/www.mcplay.biz/edit/master/',
         },
         blog: {
           path: 'news',
