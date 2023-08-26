@@ -2,7 +2,6 @@ import React from "react";
 
 export default function News({ num }) {
   const Posts = require("../../.docusaurus/docusaurus-plugin-content-blog/default/blog-post-list-prop-default.json");
-  console.log(Posts.items.slice(0, num));
   return (
     <ul className="news-list">
       {Posts.items.slice(0, num).map((item, index) => {
