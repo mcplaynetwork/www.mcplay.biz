@@ -83,9 +83,10 @@ const config = {
           //   label: '工業サーバ',
           // },
           {
-            to: 'discord',
+            to: '/discord/join',
             label: 'Discordサーバ',
             position: 'right',
+            target: '_blank',
           },
         ],
       },
