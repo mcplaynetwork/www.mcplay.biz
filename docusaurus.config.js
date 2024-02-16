@@ -1,45 +1,55 @@
 // @ts-check
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
+
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'MCPlayNetwork',
-  tagline: 'ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバ',
-  url: 'https://www.mcplay.biz',
-  baseUrl: '/',
-  onBrokenLinks: 'log', //'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'mcplaynetwork',
-  projectName: 'www.mcplay.biz',
+  title: "MCPlayNetwork",
+  tagline:
+    "ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバ",
+  favicon: "img/favicon.ico",
+
+  url: "https://www.mcplay.biz",
+  baseUrl: "/",
+
+  organizationName: "mcplaynetwork",
+  projectName: "www.mcplay.biz",
+
+  // FIXME: onBrokenLinks を 'throw' にして、リンク切れがあるとビルドが失敗するようにする。
+  // SEE ALSO: https://docusaurus.io/docs/api/docusaurus-config#onBrokenLinks
+  onBrokenLinks: "log", // 'throw',
+  onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja'],
+    defaultLocale: "ja",
+    locales: ["ja"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "/",
+          sidebarPath: "./sidebars.js",
           editUrl:
-            'https://github.com/mcplaynetwork/www.mcplay.biz/edit/master/',
+            "https://github.com/mcplaynetwork/www.mcplay.biz/edit/master/",
         },
         blog: {
-          path: 'news',
-          routeBasePath: 'news',
+          path: "news",
+          routeBasePath: "news",
           showReadingTime: false,
           blogSidebarCount: 5,
           postsPerPage: 1,
           blogSidebarTitle: "最新記事",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
@@ -48,33 +58,36 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // FIXME: Social card image を設定する
+      // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'MCPlayNetwork',
+        title: "MCPlayNetwork",
         logo: {
-          alt: 'MCPlayNetwork',
-          src: 'img/logo.svg',
+          alt: "MCPlayNetwork",
+          src: "img/logo.svg",
         },
         items: [
           {
-            to: '/',
-            position: 'left',
-            label: 'ホーム',
+            to: "/",
+            position: "left",
+            label: "ホーム",
+            exact: true,
           },
           {
-            to: 'news',
-            position: 'left',
-            label: 'ニュース',
+            to: "news",
+            position: "left",
+            label: "ニュース",
           },
           {
-            to: 'rules',
-            position: 'left',
-            label: 'ルール',
+            to: "rules",
+            position: "left",
+            label: "ルール",
           },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'vanilla',
-            label: 'バニラサーバ',
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "vanilla",
+            label: "バニラサーバ",
           },
           // {
           //   type: 'docSidebar',
@@ -83,30 +96,30 @@ const config = {
           //   label: '工業サーバ',
           // },
           {
-            to: '/discord/join',
-            label: 'Discordサーバ',
-            position: 'right',
-            target: '_blank',
+            to: "/discord",
+            label: "Discordサーバ",
+            position: "right",
+            target: "_blank",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'サイトマップ',
+            title: "サイトマップ",
             items: [
               {
-                label: 'ホーム',
-                to: '/',
+                label: "ホーム",
+                to: "/",
               },
               {
-                label: 'ルール',
-                to: 'rules',
+                label: "ルール",
+                to: "rules",
               },
               {
-                label: 'バニラサーバ',
-                to: 'vanilla',
+                label: "バニラサーバ",
+                to: "vanilla/intro",
               },
               // {
               //   label: 'Slimefun',
@@ -115,28 +128,28 @@ const config = {
             ],
           },
           {
-            title: 'コミュニティ',
+            title: "コミュニティ",
             items: [
               {
-                label: 'Discordサーバ',
-                to: 'discord',
+                label: "Discordサーバ",
+                to: "discord",
               },
               {
-                label: 'X (Twitter)',
-                href: 'https://twitter.com/mcplaynetwork',
-              }
+                label: "X (Twitter)",
+                href: "https://twitter.com/mcplaynetwork",
+              },
             ],
           },
           {
-            title: 'その他',
+            title: "その他",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/mcplaynetwork',
+                label: "GitHub",
+                href: "https://github.com/mcplaynetwork",
               },
               {
-                to: 'contact',
-                label: 'お問い合わせ',
+                to: "contact",
+                label: "お問い合わせ",
               },
             ],
           },
@@ -144,15 +157,16 @@ const config = {
         copyright: `© ${new Date().getFullYear()} MCPlayNetwork. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
       colorMode: {
-        defaultMode: 'dark',
+        // FIXME: デフォルトのモードを light にする
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
     }),
 };
 
-module.exports = config;
+export default config;
