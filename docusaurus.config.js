@@ -4,53 +4,66 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'MCPlayNetwork',
-  tagline: 'ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバ',
-  favicon: 'img/favicon.ico',
+  title: "MCPlayNetwork",
+  tagline:
+    "ルールに縛られずじっくり遊べるMinecraft: Java Editionマルチプレイサーバ",
+  favicon: "img/favicon.ico",
 
-  url: 'https://www.mcplay.biz',
-  baseUrl: '/',
+  url: "https://www.mcplay.biz",
+  baseUrl: "/",
 
-  organizationName: 'mcplaynetwork',
-  projectName: 'www.mcplay.biz',
+  organizationName: "mcplaynetwork",
+  projectName: "www.mcplay.biz",
 
   // FIXME: onBrokenLinks を 'throw' にして、リンク切れがあるとビルドが失敗するようにする。
   // SEE ALSO: https://docusaurus.io/docs/api/docusaurus-config#onBrokenLinks
-  onBrokenLinks: 'log', // 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "log", // 'throw',
+  onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'ja',
-    locales: ['ja'],
+    defaultLocale: "ja",
+    locales: ["ja"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: './sidebars.js',
+          routeBasePath: "/",
+          sidebarPath: "./sidebars.js",
           editUrl:
-            'https://github.com/mcplaynetwork/www.mcplay.biz/edit/master/',
+            "https://github.com/mcplaynetwork/www.mcplay.biz/edit/master/",
         },
         blog: {
-          path: 'news',
-          routeBasePath: 'news',
+          path: "news",
+          routeBasePath: "news",
           showReadingTime: false,
           blogSidebarCount: 5,
           postsPerPage: 1,
           blogSidebarTitle: "最新記事",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      "@docusaurus/plugin-sitemap",
+      {
+        changefreq: "weekly",
+        priority: 0.5,
+        ignorePatterns: [],
+        filename: "sitemap.xml",
+      },
     ],
   ],
 
@@ -60,33 +73,33 @@ const config = {
       // FIXME: Social card image を設定する
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'MCPlayNetwork',
+        title: "MCPlayNetwork",
         logo: {
-          alt: 'MCPlayNetwork',
-          src: 'img/logo.svg',
+          alt: "MCPlayNetwork",
+          src: "img/logo.svg",
         },
         items: [
           {
-            to: '/',
-            position: 'left',
-            label: 'ホーム',
+            to: "/",
+            position: "left",
+            label: "ホーム",
             exact: true,
           },
           {
-            to: 'news',
-            position: 'left',
-            label: 'ニュース',
+            to: "news",
+            position: "left",
+            label: "ニュース",
           },
           {
-            to: 'rules',
-            position: 'left',
-            label: 'ルール',
+            to: "rules",
+            position: "left",
+            label: "ルール",
           },
           {
-            type: 'docSidebar',
-            position: 'left',
-            sidebarId: 'vanilla',
-            label: 'バニラサーバ',
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "vanilla",
+            label: "バニラサーバ",
           },
           // {
           //   type: 'docSidebar',
@@ -95,30 +108,30 @@ const config = {
           //   label: '工業サーバ',
           // },
           {
-            to: '/discord',
-            label: 'Discordサーバ',
-            position: 'right',
-            target: '_blank',
+            to: "/discord",
+            label: "Discordサーバ",
+            position: "right",
+            target: "_blank",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'サイトマップ',
+            title: "サイトマップ",
             items: [
               {
-                label: 'ホーム',
-                to: '/',
+                label: "ホーム",
+                to: "/",
               },
               {
-                label: 'ルール',
-                to: 'rules',
+                label: "ルール",
+                to: "rules",
               },
               {
-                label: 'バニラサーバ',
-                to: 'vanilla/intro',
+                label: "バニラサーバ",
+                to: "vanilla/intro",
               },
               // {
               //   label: 'Slimefun',
@@ -127,28 +140,28 @@ const config = {
             ],
           },
           {
-            title: 'コミュニティ',
+            title: "コミュニティ",
             items: [
               {
-                label: 'Discordサーバ',
-                to: 'discord',
+                label: "Discordサーバ",
+                to: "discord",
               },
               {
-                label: 'X (Twitter)',
-                href: 'https://twitter.com/mcplaynetwork',
-              }
+                label: "X (Twitter)",
+                href: "https://twitter.com/mcplaynetwork",
+              },
             ],
           },
           {
-            title: 'その他',
+            title: "その他",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/mcplaynetwork',
+                label: "GitHub",
+                href: "https://github.com/mcplaynetwork",
               },
               {
-                to: 'contact',
-                label: 'お問い合わせ',
+                to: "contact",
+                label: "お問い合わせ",
               },
             ],
           },
@@ -161,7 +174,7 @@ const config = {
       },
       colorMode: {
         // FIXME: デフォルトのモードを light にする
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
