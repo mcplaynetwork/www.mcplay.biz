@@ -115,7 +115,7 @@ const config = {
               },
               {
                 label: 'バニラサーバ',
-                to: 'vanilla',
+                to: 'vanilla/intro',
               },
               // {
               //   label: 'Slimefun',
