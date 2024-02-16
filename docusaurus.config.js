@@ -92,7 +92,7 @@ const config = {
           //   label: '工業サーバ',
           // },
           {
-            to: '/discord/join',
+            to: '/discord',
             label: 'Discordサーバ',
             position: 'right',
             target: '_blank',
