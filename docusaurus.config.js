@@ -68,6 +68,7 @@ const config = {
             to: '/',
             position: 'left',
             label: 'ホーム',
+            exact: true,
           },
           {
             to: 'news',
