@@ -89,6 +89,12 @@ const config = {
             sidebarId: "vanilla",
             label: "バニラサーバ",
           },
+          {
+            to: "https://map.mcplay.biz/",
+            position: "left",
+            label: "ウェブマップ",
+            target: "_blank",
+          },
           // {
           //   type: 'docSidebar',
           //   position: 'left',
