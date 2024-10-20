@@ -103,7 +103,7 @@ const config = {
           // },
           {
             to: "/discord",
-            label: "Discordサーバ",
+            label: "Discord",
             position: "right",
             target: "_blank",
           },
