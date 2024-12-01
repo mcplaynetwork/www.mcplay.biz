@@ -79,28 +79,11 @@ const config = {
             label: "ニュース",
           },
           {
-            to: "rules",
-            position: "left",
-            label: "ルール",
-          },
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "vanilla",
-            label: "バニラサーバ",
-          },
-          {
             to: "https://map.mcplay.biz/",
             position: "left",
             label: "ウェブマップ",
             target: "_blank",
           },
-          // {
-          //   type: 'docSidebar',
-          //   position: 'left',
-          //   sidebarId: 'slimefun',
-          //   label: '工業サーバ',
-          // },
           {
             to: "/discord",
             label: "Discord",
@@ -119,18 +102,6 @@ const config = {
                 label: "ホーム",
                 to: "/",
               },
-              {
-                label: "ルール",
-                to: "rules",
-              },
-              {
-                label: "バニラサーバ",
-                to: "vanilla/intro",
-              },
-              // {
-              //   label: 'Slimefun',
-              //   to: 'slimefun',
-              // },
             ],
           },
           {
