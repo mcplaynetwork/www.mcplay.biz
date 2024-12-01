@@ -79,6 +79,12 @@ const config = {
             label: "ニュース",
           },
           {
+            to: "https://wiki.mcplay.biz/",
+            position: "left",
+            label: "Wiki",
+            target: "_blank",
+          },
+          {
             to: "https://map.mcplay.biz/",
             position: "left",
             label: "ウェブマップ",
@@ -101,6 +107,10 @@ const config = {
               {
                 label: "ホーム",
                 to: "/",
+              },
+              {
+                label: "wiki",
+                to: "https://wiki.mcplay.biz/",
               },
             ],
           },
