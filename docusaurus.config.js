@@ -110,11 +110,11 @@ const config = {
               },
               {
                 label: "wiki",
-                to: "https://wiki.mcplay.biz/",
+                href: "https://wiki.mcplay.biz/",
               },
               {
                 label: "ウェブマップ",
-                to: "https://map.mcplay.biz",
+                href: "https://map.mcplay.biz",
               },
             ],
           },
@@ -123,7 +123,7 @@ const config = {
             items: [
               {
                 label: "Discordサーバ",
-                to: "discord",
+                href: "https://wiki.mcplay.biz/info/discord",
               },
               {
                 label: "X (Twitter)",
@@ -137,10 +137,6 @@ const config = {
               {
                 label: "GitHub",
                 href: "https://github.com/mcplaynetwork",
-              },
-              {
-                to: "contact",
-                label: "お問い合わせ",
               },
             ],
           },
