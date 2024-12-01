@@ -112,6 +112,10 @@ const config = {
                 label: "wiki",
                 to: "https://wiki.mcplay.biz/",
               },
+              {
+                label: "ウェブマップ",
+                to: "https://map.mcplay.biz",
+              },
             ],
           },
           {
